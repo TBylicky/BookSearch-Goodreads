@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=.5">
+	<title>Simple Book Search</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="bookSearch.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+        <div class="form">
+            <input type="search" id="search-bar" class="search-bar" onsubmit="return false;" placeholder="book title, author, or ISBN">
+            <br>
+            <input type="button" class="searchbtn" onClick="bookhunt()" value="Search for Books">
+        </div>
+        <div class="result">
+            <div class="list"></div>
+        </div>
+        <div id="pageTurner">
+            <input type="button" class="navibtn" onClick="Prev()" value="<"><input type="button" class="navibtn" onClick="Next()" value=">">
+        </div>
+    </div>
+</body>
+</html>
