@@ -11,7 +11,7 @@
 <body>
 	<div class="wrapper">
         <div class="form">
-            <input type="search" id="search-bar" class="search-bar" onsubmit="return false;" placeholder="book title, author, or ISBN">
+            <input type="search" id="search-bar" class="search-bar" onKeyPress="if (event.keyCode==13){bookhunt(); return false;}" placeholder="book title, author, or ISBN">
             <br>
             <input type="button" class="searchbtn" onClick="bookhunt()" value="Search for Books">
         </div>
