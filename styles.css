@@ -9,19 +9,19 @@ html {
 }
 
 .list {
-    margin-top: 2rem;
-    display: flex;
+	margin-top: 2rem;
+	display: flex;
 	flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .thisBook {
-    flex: 0 0 32%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+	flex: 0 0 32%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
 }
 
 .form {
@@ -31,30 +31,45 @@ html {
 }
   
 .search-bar {
-	padding: .5rem 1rem;
-    width: 50em;
+	padding: .5rem 5rem;
+	width: 80%;
 	border-radius: 20px;
-    border: inset;
+	border: inset;
 	text-align:center;
 }
- 
+
+@media only screen and (max-width: 767px) {
+    .search-bar {
+		width: 100%;
+		font-size: 2rem;
+	}
+}
+
 .wrapper {
 	padding-left: calc(100vw - 100%);
 }
 
 .searchbtn {
 	width: 15em;
+	height: 2em;
 	font-size: .8rem;
-    background-color: white;
+	background-color: white;
 	color: black;
-    font-size: .8rem;
-    border-radius: 10px;
+	font-size: .8rem;
+	border-radius: 10px;
 	box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
 }
 
+@media only screen and (max-width: 767px) {
+    .searchbtn {
+		width: 40%;
+		font-size: 1.5rem;
+	}
+}
+
 .searchbtn:hover {
-    cursor: pointer;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, .8);
+	cursor: pointer;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, .8);
   }
 
 #pageTurner {
@@ -69,15 +84,58 @@ html {
 	display: inline-block;
 	font-size: 36px;
 	display:inline-block;
-    background-color: white;
+	background-color: white;
 	color: black;
-    border-radius: 10px;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, .2);
 }
 
 .navibtn:hover {
 	cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, .8)
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, .8)
+}
+
+#typeSearch {
+	width: 15em;
+	font-size: .8rem;
+	background-color: white;
+	color: black;
+	font-size: .8rem;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    #typeSearch {
+		width: 40%;
+		font-size: 1.5rem;
+	}
+}
+
+#orderSearch {
+	width: 15em;
+	font-size: .8rem;
+	background-color: white;
+	color: black;
+	font-size: .8rem;
+	border-radius: 10px;
+}
+
+@media only screen and (max-width: 767px) {
+    #orderSearch {
+		width: 40%;
+		font-size: 1.5rem;
+	}
+}
+
+h3 {
+	font-size: 1.5em;
+	margin: 0 0;
+}
+
+h4 {
+	font-size: 1em;
+	margin: 0 0;
+	padding-bottom:1.5em;
 }
 
 a:link {
